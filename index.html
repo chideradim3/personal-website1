@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uplift Studio — Websites, elevated.</title>
+  <meta name="description" content="Uplift Studio is an independent web design and development studio founded by Dim Chidera Emmanuel. Strategy, design and engineering for brands that refuse to blend in.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261025">
+</head>
+<body>
+
+  <!-- Global nav -->
+  <header class="global-nav">
+    <nav class="global-nav-inner" aria-label="Global">
+      <a href="#top" class="gn-logo" aria-label="Uplift Studio home">
+        <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 2 L17 11 H12.5 V18 H7.5 V11 H3 Z" fill="currentColor"/></svg>
+      </a>
+      <ul class="gn-links" id="gn-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#start">Start</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:upliftstudio01@gmail.com" class="gn-icon" aria-label="Email Uplift Studio">
+        <svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M3 5.5l7 5.5 7-5.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <button class="gn-toggle" aria-expanded="false" aria-controls="gn-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Sub nav (frosted) -->
+  <div class="sub-nav" id="top">
+    <div class="sub-nav-inner">
+      <a href="#top" class="sn-title">Uplift Studio</a>
+      <div class="sn-right">
+        <ul class="sn-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#studio">Studio</a></li>
+        </ul>
+        <a href="#start" class="btn btn-primary btn-compact">Start a project</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="tile tile-light hero" aria-labelledby="hero-title">
+      <div class="tile-head">
+        <p class="tagline reveal">Uplift Studio</p>
+        <h1 id="hero-title" class="hero-display reveal">Websites, elevated.</h1>
+        <p class="lead reveal">Strategy, design and engineering for brands that refuse to blend in.</p>
+        <div class="cta-pair reveal">
+          <a href="#start" class="btn btn-primary">Start a project</a>
+          <a href="#work" class="btn btn-secondary">See our work</a>
+        </div>
+      </div>
+
+      <div class="render render-hero reveal" aria-hidden="true">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>maisonaurel.com</span></div>
+          <div class="screen screen-aurel">
+            <div class="m-nav"><b>MAISON AUREL</b><span>Collections</span><span>Atelier</span><span>Journal</span><span class="m-bag">Bag</span></div>
+            <div class="m-hero">
+              <div class="m-hero-copy">
+                <small>Autumn / Winter</small>
+                <strong>Made slowly.<br>Worn forever.</strong>
+                <p>Hand-finished pieces from our Paris atelier.</p>
+                <span class="m-pill">Shop the collection</span>
+              </div>
+              <div class="m-hero-art">
+                <img src="images/website_images/aurel-hero-v2-1200.jpg"
+                     srcset="images/website_images/aurel-hero-v2-600.jpg 600w, images/website_images/aurel-hero-v2-1200.jpg 1200w"
+                     sizes="(max-width: 734px) 50vw, 560px"
+                     width="1200" height="800" alt="" decoding="async">
+              </div>
+            </div>
+            <div class="m-grid">
+              <div><span class="m-thumb t1"><img src="images/website_images/linen-overcoat-800.jpg" srcset="images/website_images/linen-overcoat-400.jpg 400w, images/website_images/linen-overcoat-800.jpg 800w" sizes="(max-width: 734px) 30vw, 300px" width="800" height="500" alt="" loading="lazy" decoding="async"></span><em>Linen Overcoat</em><small>€ 890</small></div>
+              <div><span class="m-thumb t2"><img src="images/website_images/cashmere-knit-800.jpg" srcset="images/website_images/cashmere-knit-400.jpg 400w, images/website_images/cashmere-knit-800.jpg 800w" sizes="(max-width: 734px) 30vw, 300px" width="800" height="500" alt="" loading="lazy" decoding="async"></span><em>Cashmere Knit</em><small>€ 420</small></div>
+              <div><span class="m-thumb t3"><img src="images/website_images/leather-tote-800.jpg" srcset="images/website_images/leather-tote-400.jpg 400w, images/website_images/leather-tote-800.jpg 800w" sizes="(max-width: 734px) 30vw, 300px" width="800" height="500" alt="" loading="lazy" decoding="async"></span><em>Leather Tote</em><small>€ 1,150</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured work (dark) -->
+    <section class="tile tile-dark" id="work" aria-labelledby="work-title">
+      <div class="tile-head">
+        <p class="tagline tagline-muted reveal">Featured concept</p>
+        <h2 id="work-title" class="display-lg reveal">Northline Capital.</h2>
+        <p class="lead reveal">A quiet, confident presence for a modern investment firm.</p>
+        <div class="link-pair reveal">
+          <a href="#contact" class="text-link-dark">View case study <span aria-hidden="true">›</span></a>
+          <a href="#services" class="text-link-dark">Explore services <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+
+      <div class="render render-wide reveal" aria-hidden="true">
+        <div class="browser browser-dark">
+          <div class="browser-bar"><i></i><i></i><i></i><span>northline.capital</span></div>
+          <div class="screen screen-northline">
+            <div class="m-nav"><b>NORTHLINE</b><span>Strategy</span><span>Portfolio</span><span>Insights</span><span class="m-bag">Investor login</span></div>
+            <div class="n-hero">
+              <div class="n-copy">
+                <strong>Patient capital<br>for enduring companies.</strong>
+                <p>Long-horizon investing across infrastructure, technology and healthcare.</p>
+              </div>
+              <div class="n-visual">
+                <svg class="n-orbits" viewBox="0 0 200 200">
+                  <circle class="ring" cx="100" cy="100" r="92"/>
+                  <circle class="ring" cx="100" cy="100" r="64"/>
+                  <circle class="ring" cx="100" cy="100" r="36"/>
+                  <g class="spin spin-1">
+                    <circle cx="100" cy="8" r="3.2" fill="#2997ff"/>
+                    <circle class="pulse" cx="100" cy="8" r="3.2" fill="none" stroke="#2997ff"/>
+                    <circle cx="8" cy="100" r="1.8" fill="#8e8e93"/>
+                  </g>
+                  <g class="spin spin-2">
+                    <circle cx="164" cy="100" r="2.4" fill="#f5f5f7"/>
+                    <circle cx="55" cy="55" r="1.6" fill="#8e8e93"/>
+                  </g>
+                  <g class="spin spin-3">
+                    <circle cx="100" cy="136" r="2" fill="#f5f5f7"/>
+                  </g>
+                  <circle cx="100" cy="100" r="15" fill="#1c1c1e" stroke="rgba(255,255,255,.14)"/>
+                  <path d="M100 91 L106 101 H102.4 V109 H97.6 V101 H94 Z" fill="#2997ff"/>
+                </svg>
+                <div class="n-card">
+                  <small>Fund III · Net IRR</small>
+                  <div class="n-card-row"><b>18.4%</b><em>▲ 2.1</em></div>
+                  <svg viewBox="0 0 100 28" preserveAspectRatio="none">
+                    <polyline class="n-draw" pathLength="1" points="0,24 12,21 24,22 36,16 48,17 60,11 72,12 84,6 100,3" fill="none" stroke="#2997ff" stroke-width="1.5"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="n-stats">
+              <div><b>24</b><small>Portfolio companies</small></div>
+              <div><b>12 yrs</b><small>Average hold</small></div>
+              <div><b>3</b><small>Continents</small></div>
+            </div>
+            <svg class="n-chart" viewBox="0 0 600 120" preserveAspectRatio="none">
+              <polyline class="n-draw" pathLength="1" points="0,100 60,92 120,96 180,80 240,74 300,78 360,58 420,50 480,40 540,30 600,18" fill="none" stroke="#2997ff" stroke-width="2"/>
+              <line x1="0" y1="119" x2="600" y2="119" stroke="rgba(255,255,255,.12)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-up tiles -->
+    <section class="duo" aria-label="What we build">
+      <article class="duo-tile tile-parchment">
+        <div class="tile-head">
+          <h2 class="display-lg reveal">E‑commerce.</h2>
+          <p class="lead lead-sm reveal">Storefronts built to sell.</p>
+          <div class="link-pair reveal">
+            <a href="#services" class="text-link">Learn more <span aria-hidden="true">›</span></a>
+            <a href="#start" class="text-link">Start a store <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+        <div class="render render-phone reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="p-top"><b>AUREL</b><span>Bag (1)</span></div>
+              <span class="p-img"><img src="images/website_images/phone-tote-400.jpg" srcset="images/website_images/phone-tote-200.jpg 1x, images/website_images/phone-tote-400.jpg 2x" width="200" height="160" alt="" loading="lazy" decoding="async"></span>
+              <em>Leather Tote</em>
+              <small>€ 1,150 · Cognac</small>
+              <div class="p-swatches"><i class="on"></i><i></i><i></i></div>
+              <span class="p-cta">Add to Bag</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="duo-tile tile-dark-2">
+        <div class="tile-head">
+          <h2 class="display-lg reveal">Brand sites.</h2>
+          <p class="lead lead-sm reveal">Built to be remembered.</p>
+          <div class="link-pair reveal">
+            <a href="#services" class="text-link-dark">Learn more <span aria-hidden="true">›</span></a>
+            <a href="#start" class="text-link-dark">Start a site <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+        <div class="render render-tablet reveal" aria-hidden="true">
+          <div class="tablet">
+            <div class="tablet-screen">
+              <small>Studio Halden — Architecture</small>
+              <strong>Space,<br>considered.</strong>
+              <div class="t-grid"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Services -->
+    <section class="tile tile-parchment" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 id="services-title" class="display-lg">Everything your website needs.<br><span class="muted">Nothing it doesn’t.</span></h2>
+        </header>
+
+        <div class="card-grid">
+          <article class="card reveal">
+            <div class="card-media card-media-photo">
+              <img src="images/website_images/web-design-960.jpg" srcset="images/website_images/web-design-480.jpg 480w, images/website_images/web-design-960.jpg 960w" sizes="(max-width: 640px) 92vw, (max-width: 1023px) 45vw, 260px" width="960" height="640" alt="Designer's desk with two monitors showing website layouts" loading="lazy" decoding="async">
+            </div>
+            <h3 class="card-title">Web Design</h3>
+            <p class="card-body">Editorial, conversion-minded interfaces crafted pixel by pixel.</p>
+            <a href="#start" class="text-link">Learn more <span aria-hidden="true">›</span></a>
+          </article>
+          <article class="card reveal">
+            <div class="card-media card-media-photo">
+              <img src="images/website_images/development-v2-960.jpg" srcset="images/website_images/development-v2-480.jpg 480w, images/website_images/development-v2-960.jpg 960w" sizes="(max-width: 640px) 92vw, (max-width: 1023px) 45vw, 260px" width="960" height="640" alt="Laptop showing code next to a coffee mug on a wooden desk" loading="lazy" decoding="async" style="object-position: 45% 55%">
+            </div>
+            <h3 class="card-title">Development</h3>
+            <p class="card-body">Fast, accessible, search-friendly builds on modern stacks.</p>
+            <a href="#start" class="text-link">Learn more <span aria-hidden="true">›</span></a>
+          </article>
+          <article class="card reveal">
+            <div class="card-media card-media-photo">
+              <img src="images/website_images/ecommerce-960.jpg" srcset="images/website_images/ecommerce-480.jpg 480w, images/website_images/ecommerce-960.jpg 960w" sizes="(max-width: 640px) 92vw, (max-width: 1023px) 45vw, 260px" width="960" height="640" alt="Shop owner working on a laptop at the counter of a clothing store" loading="lazy" decoding="async" style="object-position: 48% 40%">
+            </div>
+            <h3 class="card-title">E‑commerce</h3>
+            <p class="card-body">Storefronts on Shopify and headless commerce that turn visits into orders.</p>
+            <a href="#start" class="text-link">Learn more <span aria-hidden="true">›</span></a>
+          </article>
+          <article class="card reveal">
+            <div class="card-media card-media-photo">
+              <img src="images/website_images/seo-growth-960.jpg" srcset="images/website_images/seo-growth-480.jpg 480w, images/website_images/seo-growth-960.jpg 960w" sizes="(max-width: 640px) 92vw, (max-width: 1023px) 45vw, 260px" width="960" height="768" alt="Laptop showing a quarterly revenue growth chart" loading="lazy" decoding="async" style="object-position: 50% 35%">
+            </div>
+            <h3 class="card-title">SEO &amp; Growth</h3>
+            <p class="card-body">Technical SEO, analytics and ongoing optimization after launch.</p>
+            <a href="#start" class="text-link">Learn more <span aria-hidden="true">›</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="tile tile-light" id="process" aria-labelledby="process-title">
+      <div class="container container-text">
+        <header class="section-head reveal">
+          <p class="tagline">Process</p>
+          <h2 id="process-title" class="display-lg">Four steps. No surprises.</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-body">We learn your business, audience and goals, then define the strategy and site structure.</p>
+            <span class="step-meta">1–2 weeks</span>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3 class="step-title">Design</h3>
+            <p class="step-body">Content-first wireframes become refined visual design, reviewed with you at every milestone.</p>
+            <span class="step-meta">2–3 weeks</span>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3 class="step-title">Build</h3>
+            <p class="step-body">We engineer a fast, accessible site, test it across devices, and prepare a seamless launch.</p>
+            <span class="step-meta">2–4 weeks</span>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <h3 class="step-title">Elevate</h3>
+            <p class="step-body">After go-live we measure, refine and support — so your website keeps getting better.</p>
+            <span class="step-meta">Ongoing</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Founder quote -->
+    <section class="tile tile-dark quote" id="studio" aria-labelledby="quote-title">
+      <div class="container container-text">
+        <svg class="quote-mark reveal" viewBox="0 0 20 20" width="28" height="28" aria-hidden="true"><path d="M10 2 L17 11 H12.5 V18 H7.5 V11 H3 Z" fill="currentColor"/></svg>
+        <blockquote class="reveal">
+          <p id="quote-title" class="display-lg quote-text">“A great website feels inevitable. Every detail considered. Nothing extra.”</p>
+        </blockquote>
+        <p class="quote-cite reveal"><img class="quote-avatar" src="images/website_images/ceo-portrait-240.jpg" srcset="images/website_images/ceo-portrait-120.jpg 1x, images/website_images/ceo-portrait-240.jpg 2x" width="112" height="112" alt="Dim Chidera Emmanuel, Founder and CEO of Uplift Studio" loading="lazy" decoding="async"><strong>Dim Chidera Emmanuel</strong><span>Founder &amp; CEO, Uplift Studio</span></p>
+        <p class="lead-airy reveal">Every Uplift project is led personally by our founder — senior thinking and direct accountability from first call to launch day and beyond.</p>
+      </div>
+    </section>
+
+    <!-- Configurator -->
+    <section class="tile tile-parchment" id="start" aria-labelledby="start-title">
+      <div class="container container-text">
+        <header class="section-head reveal">
+          <p class="tagline">Start a project</p>
+          <h2 id="start-title" class="display-lg">Tell us what you need.</h2>
+          <p class="body-intro">Pick what fits best and leave your details. We’ll reply within one business day with a tailored proposal.</p>
+        </header>
+
+        <form id="start-form" class="project-form" action="https://formspree.io/f/xwllpgqo" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New project enquiry — Uplift Studio">
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <fieldset class="config reveal">
+            <legend class="config-label">What are we building?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="project_type" value="Landing page"><b>Landing page</b><small>Launch fast</small></label>
+              <label class="chip"><input type="radio" name="project_type" value="Marketing website" checked><b>Marketing website</b><small>Most popular</small></label>
+              <label class="chip"><input type="radio" name="project_type" value="E‑commerce store"><b>E‑commerce store</b><small>Built to sell</small></label>
+              <label class="chip"><input type="radio" name="project_type" value="Web app"><b>Web app</b><small>Custom product</small></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="config reveal">
+            <legend class="config-label">Timeline</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="timeline" value="Standard timeline (6–10 weeks)" checked><b>Standard</b><small>6–10 weeks</small></label>
+              <label class="chip"><input type="radio" name="timeline" value="Accelerated timeline (3–5 weeks)"><b>Accelerated</b><small>3–5 weeks</small></label>
+              <label class="chip"><input type="radio" name="timeline" value="Flexible timeline"><b>Flexible</b><small>Let’s discuss</small></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="config reveal">
+            <legend class="config-label">Your details</legend>
+            <div class="fields">
+              <div class="field">
+                <label for="f-name">Name</label>
+                <input id="f-name" class="input" type="text" name="name" autocomplete="name" required aria-describedby="f-name-err">
+                <p class="field-error" id="f-name-err">Please enter your name.</p>
+              </div>
+              <div class="field">
+                <label for="f-email">Email</label>
+                <input id="f-email" class="input" type="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+                <p class="field-error" id="f-email-err">Please enter a valid email address.</p>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone <span class="optional">(optional)</span></label>
+                <input id="f-phone" class="input" type="tel" name="phone" autocomplete="tel" inputmode="tel">
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-actions reveal">
+            <button type="submit" class="btn btn-primary" id="form-submit">Send project request</button>
+            <p class="form-note">We’ll only use your details to reply to this request.</p>
+          </div>
+          <p class="form-error" id="form-error" role="alert" hidden>Something went wrong — please try again or email <a href="mailto:upliftstudio01@gmail.com">upliftstudio01@gmail.com</a>.</p>
+        </form>
+
+        <div class="form-success" id="form-success" role="status" aria-live="polite" tabindex="-1" hidden>
+          <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 24.5l6 6 12-13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Thanks! I’ll be in touch within one business day.</h3>
+          <p>Your project request has been sent. Prefer to talk sooner?</p>
+          <a href="https://calendly.com/upliftstudio01/30min" target="_blank" rel="noopener" class="text-link">Book a call <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="tile tile-light final" id="contact" aria-labelledby="final-title">
+      <div class="tile-head">
+        <h2 id="final-title" class="hero-display reveal">Ready when you are.</h2>
+        <p class="lead reveal">Let’s build something remarkable together.</p>
+        <div class="cta-pair reveal">
+          <a href="https://calendly.com/upliftstudio01/30min" target="_blank" rel="noopener" class="btn btn-store">Book a call</a>
+        </div>
+        <a href="mailto:upliftstudio01@gmail.com" class="text-link reveal">upliftstudio01@gmail.com <span aria-hidden="true">›</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating sticky bar -->
+  <div class="sticky-bar" id="sticky-bar" aria-hidden="true">
+    <div class="sticky-inner">
+      <p class="sticky-summary"><span class="muted">Your project:</span> <strong id="summary">Marketing website · Standard timeline</strong></p>
+      <button type="submit" form="start-form" class="btn btn-primary" id="sticky-cta" tabindex="-1">Send request</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-note">Uplift Studio is an independent web design and development studio founded by Dim Chidera Emmanuel. We partner with ambitious brands around the world.</p>
+
+      <div class="footer-cols">
+        <div>
+          <h3 class="footer-head">Studio</h3>
+          <ul><li><a href="#studio">About</a></li><li><a href="#process">Process</a></li><li><a href="#work">Work</a></li><li><a href="#contact">Contact</a></li></ul>
+        </div>
+        <div>
+          <h3 class="footer-head">Services</h3>
+          <ul><li><a href="#services">Web Design</a></li><li><a href="#services">Development</a></li><li><a href="#services">E‑commerce</a></li><li><a href="#services">SEO &amp; Growth</a></li></ul>
+        </div>
+        <div>
+          <h3 class="footer-head">Start</h3>
+          <ul><li><a href="#start">Start a project</a></li><li><a href="https://calendly.com/upliftstudio01/30min" target="_blank" rel="noopener">Book a call</a></li></ul>
+        </div>
+        <div>
+          <h3 class="footer-head">Connect</h3>
+          <ul class="social">
+            <li><a href="mailto:upliftstudio01@gmail.com" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" class="i-stroke"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></svg>
+            </a></li>
+            <li><a href="#" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" class="i-fill"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a></li>
+            <li><a href="#" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" class="i-stroke"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".6" class="dot"/></svg>
+            </a></li>
+            <li><a href="#" aria-label="X" title="X">
+              <svg viewBox="0 0 24 24" class="i-fill"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.25 6.93 6.06-6.93zm-1.29 19.5h2.04L6.49 3.24H4.3L17.61 20.65z"/></svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <p>Copyright © <span id="year">2026</span> Uplift Studio. All rights reserved.</p>
+        <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=20261025"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# ---- Secrets: never commit ----
+sensitive.env
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*secret*
+*token*
+*credentials*
+
+# ---- Unused original images (kept locally, not part of the site) ----
+# Reference screenshots
+/images/*.jpg
+# Full-size source photos (the site uses the optimized copies)
+/images/website_images/pexels-*.jpg
+/images/website_images/C.E.O.jpg
+/images/website_images/oop.jpg
+
+# ---- OS / editor clutter ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
