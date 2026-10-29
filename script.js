@@ -133,6 +133,52 @@
     });
   });
 
+  // Email links: still open the mail app, but also copy the address so it
+  // works on computers with no email app set up.
+  var toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.setAttribute('role', 'status');
+  toast.setAttribute('aria-live', 'polite');
+  document.body.appendChild(toast);
+  var toastTimer;
+
+  function showToast(text) {
+    toast.textContent = text;
+    toast.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('is-visible'); }, 3500);
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+      document.body.removeChild(ta);
+      ok ? resolve() : reject();
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href^="mailto:"]');
+    if (!link) return;
+    var address = decodeURIComponent(link.getAttribute('href').slice(7).split('?')[0]);
+    copyText(address).then(function () {
+      showToast('Email copied: ' + address);
+    }).catch(function () {
+      showToast('Email us at ' + address);
+    });
+  });
+
   // Footer year
   document.getElementById('year').textContent = new Date().getFullYear();
 })();

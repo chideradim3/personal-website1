@@ -197,6 +197,7 @@ button { font: inherit; color: inherit; }
 .tile-head { text-align: center; padding: 0 var(--gutter); display: flex; flex-direction: column; align-items: center; }
 .tile-head .tagline + * { margin-top: var(--s-xs); }
 .tile-head .lead { margin-top: var(--s-sm); }
+.hero .lead { max-width: 820px; text-wrap: balance; }
 .cta-pair { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-md); margin-top: var(--s-lg); }
 .link-pair { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-xl); margin-top: var(--s-md); }
 
@@ -516,6 +517,23 @@ button { font: inherit; color: inherit; }
 .sticky-summary { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sticky-summary strong { font-weight: 600; }
 
+/* ---------- toast ---------- */
+.toast {
+  position: fixed; left: 50%; bottom: 24px; z-index: 70;
+  max-width: calc(100% - 32px);
+  padding: 10px 18px;
+  background: var(--ink); color: var(--body-on-dark);
+  border-radius: var(--r-pill);
+  font-size: 14px; line-height: 1.29; letter-spacing: -0.224px;
+  text-align: center;
+  opacity: 0; visibility: hidden;
+  transform: translate(-50%, 8px);
+  transition: opacity .25s ease, transform .25s ease, visibility .25s;
+  pointer-events: none;
+}
+.toast.is-visible { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+.sticky-bar.is-visible ~ .toast { bottom: 88px; }
+
 /* ---------- footer ---------- */
 .footer { background: var(--canvas-parchment); color: var(--ink-muted-80); padding: 64px 0 var(--s-xl); }
 .footer .container { max-width: 1024px; }
@@ -523,7 +541,7 @@ button { font: inherit; color: inherit; }
   padding-bottom: var(--s-md); border-bottom: 1px solid var(--hairline);
   color: var(--ink-muted-48); font-size: 12px; line-height: 1.5; letter-spacing: -0.12px;
 }
-.footer-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-lg); padding-top: var(--s-lg); }
+.footer-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: var(--s-lg); padding-top: var(--s-lg); }
 .footer-head { font-size: 14px; font-weight: 600; line-height: 1.29; letter-spacing: -0.224px; color: var(--ink); margin-bottom: var(--s-xxs); }
 .footer-cols a { color: var(--ink-muted-80); font-size: 17px; line-height: 2.41; letter-spacing: 0; }
 
